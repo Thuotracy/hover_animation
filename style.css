@@ -15,7 +15,9 @@
     position: relative;
     width: 24px;
     height: 24px;
-    background: red;
+    background: #111;
     float: left;
     border: 1.5px solid rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    overflow: hidden;
 }
