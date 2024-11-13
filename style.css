@@ -10,3 +10,12 @@
     background-color: #111;
     overflow: hidden;
 }
+
+.box{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: red;
+    float: left;
+    border: 1.5px solid rgba(0,0,0,0.5);
+}
