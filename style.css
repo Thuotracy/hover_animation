@@ -21,3 +21,61 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+
+.box::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #1d1d1d;
+    transition: 2s ease-in-out;
+}
+
+.box:hover::before{
+    transition: 0s ease-in-out;
+    background: #fff;
+}
+
+.box:nth-child(9n+1):hover::before{
+    background-color: #f00;
+}
+
+.box:nth-child(9n+2):hover::before{
+    background-color: #0f0;
+}
+
+.box:nth-child(9n+3):hover::before{
+    background-color: #00f;
+}
+
+.box:nth-child(9n+4):hover::before{
+    background-color: #ff0;
+}
+
+.box:nth-child(9n+5):hover::before{
+    background-color: #0ff;
+}
+
+.box:nth-child(9n+6):hover::before{
+    background-color: #f0f;
+}
+
+.box:nth-child(9n+7):hover::before{
+    background-color: #e91e63;
+}
+
+.box:nth-child(9n+8):hover::before{
+    background-color: #00ffad;
+}
+
+.box:nth-child(9n+9):hover::before{
+    background-color: #f45103;
+}
+
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #1d1d1d;
+    transition: 2s ease-in-out;
+}
